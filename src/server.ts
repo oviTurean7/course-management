@@ -12,7 +12,6 @@ let courses = [
     { id: 3, title: 'Course 3', description: 'Description of Course 3', duration: 4 }
 ];
 
-console.log('asd')
 app.post('/courses', (req: Request, res: Response) => {
     const newCourse = req.body;
     newCourse.id = courses.length + 1;
